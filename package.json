@@ -1,6 +1,6 @@
 {
   "name": "chai-date-string",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Validates a string to have valid date format",
   "main": "index.js",
   "scripts": {

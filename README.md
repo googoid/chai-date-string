@@ -1,13 +1,15 @@
-# chai-contained
+# chai-date-string
 
 Usage example:
 ``` javascript
 var chai = require('chai')
   , expect = chai.expect
-  , chaiContained = require('chai-contained');
+  , chaiDateString = require('chai-date-string');
 
-expect('foo').to.be.containedIn(['foo', 'bar']); // will pass
-expect('foo').to.be.containedIn(['noFoo', 'baz']); // will fail
+expect('2015-11-12').to.be.a.dateString(); // will pass
+expect('2015-24-12').to.be.a.dateString(); // will fail
 ```
 
-The later will fail with message: `AssertionError: expected 'foo' to be one of the [ 'noFoo', 'baz' ]`
+It will validate time part as well.
+
+The later will fail with message: `AssertionError: expected '2015-24-12' to be a date string.
