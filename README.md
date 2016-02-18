@@ -1,6 +1,7 @@
 # chai-date-string
 
 Usage example:
+
 ``` javascript
 var chai = require('chai')
   , expect = chai.expect
@@ -12,4 +13,4 @@ expect('2015-24-12').to.be.a.dateString(); // will fail
 
 It will validate time part as well.
 
-The later will fail with message: `AssertionError: expected '2015-24-12' to be a date string.
+The later will fail with message: `AssertionError: expected '2015-24-12' to be a date string`.
